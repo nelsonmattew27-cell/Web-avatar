@@ -1,0 +1,15 @@
+{
+  "name": "Avatar Mirror 3D",
+  "short_name": "AvatarMirror",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#111111",
+  "theme_color": "#00e0ff",
+  "icons": [
+    {
+      "src": "[cdn-icons-png.flaticon.com](https://cdn-icons-png.flaticon.com/512/1534/1534996.png)",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
