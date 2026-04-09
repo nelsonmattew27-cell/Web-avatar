@@ -97,4 +97,4 @@ const video = document.getElementById('webcam');
 })();
 
 // ===== LOAD DEFAULT VRM =====
-loadVRM('aliciaSolid.vrm');
+loadVRM('AliciaSolid.vrm');
