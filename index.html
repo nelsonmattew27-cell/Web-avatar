@@ -1,15 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webcam Avatar Mirror</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avatar Mirror 3D</title>
+  <style>
+    body { margin: 0; background: #111; overflow: hidden; }
+    canvas { display: block; }
+    #webcam { display: none; }
+    #controls {
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    input[type="file"] {
+      color: white;
+      background: #333;
+      border: none;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 <body>
-    <h1>Webcam Avatar Mirror</h1>
-    <video id="webcam" autoplay></video>
-    <canvas id="canvas"></canvas>
-    <script src="main.js"></script>
+  <div id="controls">
+    <p>Avatar Mirror 3D</p>
+    <input type="file" id="vrm-upload" accept=".vrm" />
+  </div>
+  <canvas id="vrm-canvas"></canvas>
+  <video id="webcam" autoplay playsinline muted></video>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
